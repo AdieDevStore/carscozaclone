@@ -1,0 +1,5 @@
+{
+  "[prsima]": {
+    "editor.defaultFormatter": "Prisma.prsima"
+  }
+}
