@@ -1,8 +1,6 @@
-import { PrismaClient } from "@prisma/client";
 import express from "express"; 
 import { Request, Response } from "express";
 
-const prisma = new PrismaClient();
 
 const UserRoutes: express.Router = express.Router(); 
 
@@ -14,12 +12,7 @@ UserRoutes.get('/login', (req: Request, res: Response, next) => {
 })
 
 UserRoutes.post('/login', async (req: Request, res: Response) => {
-  const userdata = {
-    username: 'adrian@carscoza.co.za',
-    password: 'helloworld',
-    firstname: 'adrian',
-    lastname: 'viljoen',
-  }
+  
 })
 
 UserRoutes.get('/register', (req: Request, res: Response, next) => {
